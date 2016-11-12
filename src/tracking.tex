@@ -11,9 +11,31 @@
 \usetheme{Warsaw}
 
 
+\title{Le tracking sur le web}
+
+\author{Ilan 'trog' Dubois}
+
 
 \begin{document}
     \begin{frame}
-        Voici votre première page de présentation en LaTeX !
+        \titlepage
+    \end{frame}
+    \section{Fonctionnement du tracking}
+    \subsection{Techniques conventionnelles}
+    \begin{frame}{label=cookies}
+        \frametitle{Les cookies}
+        \begin{center}
+            Mini text stocké dans votre navigateur ne pouvant être lu que par le site qui l'a déposé.
+            En y laissant un identifiant un site peut facilement vous reconnaître lors de vos visites et reconstituer votre historique sur ce site.
+            Les annonceurs utilisent cette pratique pour tracker à l'échelle de plusieurs sites, ce sont des tierces parties.
+        \end{center}
+    \end{frame}
+    \begin{frame}{label=statistiques}
+        \frametitle{Les statistiques}
+        \begin{center}
+            Pour connaître son audience, un site doit collecter des informations techniques diverses.
+            Google et son service analytics est très largement utilisé (54\%) pour collecter ces données.
+            Ce qui implique que toutes les visites effectuées sur ces sites sont aussi connues de Google.
+        \end{center}
     \end{frame}
 \end{document}
