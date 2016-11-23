@@ -7,6 +7,8 @@
 
 \usepackage[utf8]{inputenc}
 
+\usepackage{amsmath}
+
 \usetheme{Darmstadt}
 
 \title{Le tracking sur le web}
@@ -129,4 +131,44 @@
                 \end{itemize}
             \end{center}
         \end{frame}
+        \begin{frame}{label=hardware}
+          \frametitle{Hardware fingerprinting}
+            \begin{center}
+                \begin{itemize}
+                    \item Toutes les méthodes evoquées précédement sont basées sur des spécificités logiciel de nos machines, et sont donc potentiellement contournables.
+                    \item Avec un tracking basé sur les informations materielles, il est en théorie impossible de mentir et donc impossible de fausser ce profilage.
+                    \item Ces techniques consistent a détécter des irrégularités commises à la fabrication de votre matériel comme d'infimes différences de latence propre a votre GPU.
+                    \item Ces techniques sont donc plus difficiles à repousser mais aussi à mettre en place et à fiabiliser pour les trackers, nous ne verrons donc ici pas ce cas.
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \section{Se défendre}
+        \subsection{Environnement}
+            \begin{frame}
+                \begin{center}
+                    \includegraphics[scale=0.35]{img/265-separation.png}
+                \end{center}
+            \end{frame}
+            \begin{frame}{label=updates}
+                \frametitle{Les mises à jour}
+                \begin{center}
+                    \begin{itemize}
+                        \item Un environnement de travail à jour améliore la sécurité générale de votre système.
+                        \item Il vous permet d'avoir des numéros de version plus communes, donc moins facilement identifiables pour un nouveau tracker.
+                    \end{itemize}
+                \end{center}
+            \end{frame}
+            \begin{frame}{label=browser}
+                \frametitle{Le navigateur}
+                \framesubtitle{Votre navigateur sera votre meilleur allié ou pire ennemi}
+                \begin{center}
+                  \textbf{Chrome, IE, Firefox, Opera\ldots Ces navigateurs ne sont pas égaux!}
+
+                  $\displaystyle \begin{bmatrix}
+                      \text{Firefox et Chromium sont libres}\\
+                      \text{Chromium = Google}\\
+                      \text{Firefox = Mozilla}
+                  \end{bmatrix} \implies \includegraphics[scale=0.4]{img/firefox.png}$
+                \end{center}
+            \end{frame}
 \end{document}
