@@ -105,14 +105,14 @@
             \frametitle{Le fingerprinting}
             \begin{center}
                 \begin{itemize}
-                    \item La défense contre les systèmes évqués précedemmen étant trop aisée pour l'utilisateur, les trackers ont développés de nouvelles techniques \citet{web}.
+                    \item La défense contre les systèmes évqués précedemmen étant trop aisée pour l'utilisateur, les trackers ont développés de nouvelles techniques \cite{web}.
                     \item Le fingerprinting consiste à vous identifier de façon uniqe avec à votre configuration (matérielle et logiciel).
                     \item Pour se défendre, ces systèmes reprennent souvent des fonctionnalités légitimes afin de ne pas être bloquées par l'utilisateur.
                 \end{itemize}
             \end{center}
         \end{frame}
         \begin{frame}{label=evercookies}
-          \frametitle{Ever cookies}
+            \frametitle{Ever cookies}
             \begin{center}
                 \begin{itemize}
                     \item Les cookies étant \textit{trop} facilement contrôlables, les trackers développent des techniques plus ou moins évoluées pour qu'ils restent.
@@ -123,7 +123,7 @@
             \end{center}
         \end{frame}
         \begin{frame}{label=partage}
-          \frametitle{Partage d'informations (Top 3000 Alexa --- 2014)}
+            \frametitle{Partage d'informations (Top 3000 Alexa --- 2014)}
             \begin{center}
                 \begin{itemize}
                     \item Le nombre de domaines capables de recouvrir plus de 40\% de l'historique en se basant sur des cookies de tout type est de \textbf{2}.
@@ -133,7 +133,7 @@
             \end{center}
         \end{frame}
         \begin{frame}{label=hardware}
-          \frametitle{Hardware fingerprinting}
+            \frametitle{Hardware fingerprinting}
             \begin{center}
                 \begin{itemize}
                     \item Toutes les méthodes evoquées précédement sont basées sur des spécificités logiciel de nos machines, et sont donc potentiellement contournables.
@@ -143,78 +143,79 @@
                 \end{itemize}
             \end{center}
         \end{frame}
-        \section{Se défendre}
-        \subsection{Environnement}
-            \begin{frame}
-                \begin{center}
-                    \includegraphics[scale=0.35]{img/265-separation.png}
-                \end{center}
-            \end{frame}
-            \begin{frame}{label=updates}
-                \frametitle{Les mises à jour}
-                \begin{center}
-                    \begin{itemize}
-                        \item Un environnement de travail à jour améliore la sécurité générale de votre système.
-                        \item Il vous permet d'avoir des numéros de version plus communes, donc moins facilement identifiables pour un nouveau tracker.
-                        \item Ne pas oublier d'ajouter l'option \textit{Do No Track}.
-                    \end{itemize}
-                \end{center}
-            \end{frame}
-            \begin{frame}{label=browser}
-                \frametitle{Le navigateur}
-                \framesubtitle{Votre navigateur sera votre meilleur allié ou pire ennemi}
-                \begin{center}
-                  \textbf{Chrome, IE, Firefox, Opera\ldots Ces navigateurs ne sont pas égaux!}
+    \section{Se défendre}
+    \subsection{Environnement}
+        \begin{frame}
+            \begin{center}
+                \includegraphics[scale=0.35]{img/265-separation.png}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=updates}
+            \frametitle{Les mises à jour}
+            \begin{center}
+                \begin{itemize}
+                    \item Un environnement de travail à jour améliore la sécurité générale de votre système.
+                    \item Il vous permet d'avoir des numéros de version plus communes, donc moins facilement identifiables pour un nouveau tracker.
+                    \item Ne pas oublier d'ajouter l'option \textit{Do No Track}.
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=browser}
+            \frametitle{Le navigateur}
+            \framesubtitle{Votre navigateur sera votre meilleur allié ou pire ennemi}
+            \begin{center}
+                \textbf{Chrome, IE, Firefox, Opera\ldots Ces navigateurs ne sont pas égaux!}
 
-                  $\displaystyle \begin{bmatrix}
-                      \text{Firefox et Chromium sont libres}\\
-                      \text{Chromium = Google}\\
-                      \text{Firefox = Mozilla}
-                  \end{bmatrix} \implies \includegraphics[scale=0.4]{img/firefox.png}$
-                \end{center}
-            \end{frame}
-          \subsection{Plugins}
-              \begin{frame}
-                  \begin{center}
-                      \includegraphics[scale=0.15]{img/data_science.jpg}
-                  \end{center}
-              \end{frame}
-              \begin{frame}{label=badger}
-                  \frametitle{Privacy Badger}
-                  \begin{center}
-                      \begin{itemize}
-                          \item Privacy Badger filtre selon 3 niveux les cookies que les sites mettent sur votre machine.
-                          \item Vert c'est OK :)
-                          \item Orange le cookie sera bloqué, mais pas le domaine ayant fait la requête.
-                          \item Rouge faut plus passer. Le domaine est tout simplement bloqué.
-                          \item La configuration standard est tout à fait satisfaisante.
-                      \end{itemize}
-                  \end{center}
-              \end{frame}
-              \begin{frame}{label=adblocker}
-                  \frametitle{AdBlock}
-                  \begin{center}
-                      \begin{itemize}
-                          \item Bien qu'il soit de plus en plus contreversé, AdBlock est fiable pour la vie privée.
-                          \item A la condition d'utiliser à minima les listes easy list + liste de vos langues + easy privacy.
-                          \item Dé-cocher l'autorisation pour certaines publicités.
-                          \item La liste easy privacy bloque les trackers de statistiques, les boutons like,\ldots
-                      \end{itemize}
-                  \end{center}
-              \end{frame}
-              \begin{frame}{label=ras}
-                  \frametitle{Random Agent Spoofer}
-                  \begin{center}
-                      \begin{itemize}
-                          \item Ce plugin permet de mentir aux trackers quant aux spécificités de votre systeme (versions, programmes)\ldots
-                          \item Configurer a Random \textbf{desktop} et \textbf{sans} changement périodique. Exclure dans la liste les navigateurs trop vieux ou exotiques.
-                          \item Dans \textit{Headers} cocher Enable DNT et les trois dernières.
-                          \item Pour le reste je vous propose de voir mes options et de choisir selon votre convenance.
-                      \end{itemize}
-                  \end{center}
-              \end{frame}
-              \begin{frame}
-                    \bibliography{src/tracking}{}
-                    \bibliographystyle{plain}
-              \end{frame}
+                $\displaystyle \begin{bmatrix}
+                    \text{Firefox et Chromium sont libres}\\
+                    \text{Chromium = Google}\\
+                    \text{Firefox = Mozilla}
+                \end{bmatrix} \implies \includegraphics[scale=0.4]{img/firefox.png}$
+            \end{center}
+        \end{frame}
+    \subsection{Plugins}
+        \begin{frame}
+            \begin{center}
+                \includegraphics[scale=0.15]{img/data_science.jpg}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=badger}
+            \frametitle{Privacy Badger}
+            \begin{center}
+                \begin{itemize}
+                    \item Privacy Badger filtre selon 3 niveux les cookies que les sites mettent sur votre machine.
+                    \item Vert c'est OK :)
+                    \item Orange le cookie sera bloqué, mais pas le domaine ayant fait la requête.
+                    \item Rouge faut plus passer. Le domaine est tout simplement bloqué.
+                    \item La configuration standard est tout à fait satisfaisante.
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=adblocker}
+            \frametitle{AdBlock}
+            \begin{center}
+                \begin{itemize}
+                    \item Bien qu'il soit de plus en plus contreversé, AdBlock est fiable pour la vie privée.
+                    \item A la condition d'utiliser à minima les listes easy list + liste de vos langues + easy privacy.
+                    \item Dé-cocher l'autorisation pour certaines publicités.
+                    \item La liste easy privacy bloque les trackers de statistiques, les boutons like,\ldots
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=ras}
+            \frametitle{Random Agent Spoofer}
+            \begin{center}
+                \begin{itemize}
+                    \item Ce plugin permet de mentir aux trackers quant aux spécificités de votre systeme (versions, programmes)\ldots
+                    \item Configurer a Random \textbf{desktop} et \textbf{sans} changement périodique. Exclure dans la liste les navigateurs trop vieux ou exotiques.
+                    \item Dans \textit{Headers} cocher Enable DNT et les trois dernières.
+                    \item Pour le reste je vous propose de voir mes options et de choisir selon votre convenance.
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \appendix
+        \begin{frame}
+            \bibliography{src/tracking}{}
+            \bibliographystyle{plain}
+        \end{frame}
 \end{document}

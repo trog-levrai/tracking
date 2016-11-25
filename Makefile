@@ -4,9 +4,10 @@ SRC_DIR=src/
 all:
 	pdflatex $(SRC_DIR)$(SRC).tex
 
-dist:
-	pdflatex $(SRC_DIR)$(SRC).tex
+bib:
 	bibtex $(SRC)
+
+dist: all bib
 	pdflatex $(SRC_DIR)$(SRC).tex
 	pdflatex $(SRC_DIR)$(SRC).tex
 
