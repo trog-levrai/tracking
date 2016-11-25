@@ -43,7 +43,7 @@
                     \pause
                     \item Elles permettent en effet de n'envoyer que des annonces qui ont de fortes chances de vous intéresser.
                     \pause
-                    \item Le profilage et donc la pour optimiser les dépenses et augmenter l'intérêt des potentiels clients.
+                    \item Le profilage et donc là pour optimiser les dépenses et augmenter l'intérêt des potentiels clients.
                 \end{itemize}
             \end{center}
         \end{frame}
@@ -51,7 +51,7 @@
             \frametitle{La surveillance}
             \begin{center}
                 \begin{itemize}
-                    \item Ces données peuvent également utilisées pour effectuer une surveillance des internautes.
+                    \item Ces données peuvent également être utilisées pour effectuer une surveillance des internautes.
                     \pause
                     \item En profilant un utilisateur, on peut prévoir son comportement (avec de très importantes marges d'erreur).
                     \pause
@@ -80,7 +80,7 @@
             \begin{center}
                 \begin{itemize}
                     \item Pour connaître son audience, un site doit collecter des informations techniques diverses.
-                    \item Google et son service analytics est très largement utilisé (54\%) pour collecter ces données.
+                    \item Google avec son service Analytics est très largement utilisé (54\%) pour collecter ces données.
                     \item Ce qui implique que toutes les visites effectuées sur ces sites sont aussi connues de Google.
                 \end{itemize}
             \end{center}
@@ -91,7 +91,7 @@
                 \begin{itemize}
                     \item Les réseaux sociaux proposent souvent des boutons pour partager le contenu d'une page.
                     \item Lors du chargement du bouton sur la page, celui-ci collecte également des statistiques sur votre visite.
-                    \item Les sites comme Facebook et Twitter peuvent ainsi reconstituer une part très importante de votre historique.
+                    \item Les sites comme Facebook ou Twitter peuvent ainsi reconstituer une part très importante de votre historique.
                 \end{itemize}
             \end{center}
         \end{frame}
@@ -105,9 +105,10 @@
             \frametitle{Le fingerprinting}
             \begin{center}
                 \begin{itemize}
-                    \item La défense contre les systèmes évqués précedemmen étant trop aisée pour l'utilisateur, les trackers ont développés de nouvelles techniques \cite{web}.
-                    \item Le fingerprinting consiste à vous identifier de façon uniqe avec à votre configuration (matérielle et logiciel).
-                    \item Pour se défendre, ces systèmes reprennent souvent des fonctionnalités légitimes afin de ne pas être bloquées par l'utilisateur.
+                    \item La défense contre les systèmes évqués précédemment étant trop aisée pour l'utilisateur, les trackers ont développé de nouvelles techniques \cite{web}.
+                    \item Le fingerprinting consiste à vous identifier de façon uniqe avec à votre configuration (matérielle et logiciel) \cite{unique}.
+                    \item Pour se défendre, ces systèmes reprennent souvent des fonctionnalités légitimes afin de ne pas être bloquées par l'utilisateur \cite{canvas}.
+                    \item L'une de ces méthodes consiste a générer des images particulières tel que son rendu sera dépendant de votre système: Canvas fingerprinting \cite{canvas}.
                 \end{itemize}
             \end{center}
         \end{frame}
@@ -115,9 +116,9 @@
             \frametitle{Ever cookies}
             \begin{center}
                 \begin{itemize}
-                    \item Les cookies étant \textit{trop} facilement contrôlables, les trackers développent des techniques plus ou moins évoluées pour qu'ils restent.
-                    \item Augmanter la durée de vie, utiliser les cookies Flash, respawn les cookies entre eux, dissimuler leur nature...
-                    \item Do Not Track réduit de 2,6\% la synchronisation.
+                    \item Les cookies étant \textit{trop} facilement contrôlables, les trackers développent des techniques plus ou moins évoluées pour qu'ils restent \cite{web}.
+                    \item Augmenter la durée de vie, utiliser les cookies Flash, respawn les cookies entre eux \cite{web}, dissimuler leur nature...
+                    \item Do Not Track réduit de 2,6\% la synchronisation \cite{web}.
                     \item Seul le Tor browser est efficace à 100\% contre les ever cookies
                 \end{itemize}
             \end{center}
@@ -126,9 +127,9 @@
             \frametitle{Partage d'informations (Top 3000 Alexa --- 2014)}
             \begin{center}
                 \begin{itemize}
-                    \item Le nombre de domaines capables de recouvrir plus de 40\% de l'historique en se basant sur des cookies de tout type est de \textbf{2}.
-                    \item En partageant leurs informations ce chiffre passe à \textbf{161} selon estimation modeste (partage avec un unique tracker à la fois).
-                    \item Cette pratique permet à un grand nombre d'entreprise d'avoir un accès conséquent à votre historique.
+                    \item Le nombre de domaines capables de recouvrir plus de 40\% de l'historique en se basant sur des cookies de tout type est de \textbf{2} \cite{web}.
+                    \item En partageant leurs informations ce chiffre passe à \textbf{161} selon estimation modeste (partage avec un unique tracker à la fois) \cite{web}.
+                    \item Cette pratique permet à un grand nombre d'entreprises d'avoir un accès conséquent à votre historique.
                 \end{itemize}
             \end{center}
         \end{frame}
@@ -137,8 +138,8 @@
             \begin{center}
                 \begin{itemize}
                     \item Toutes les méthodes evoquées précédement sont basées sur des spécificités logiciel de nos machines, et sont donc potentiellement contournables.
-                    \item Avec un tracking basé sur les informations materielles, il est en théorie impossible de mentir et donc impossible de fausser ce profilage.
-                    \item Ces techniques consistent a détécter des irrégularités commises à la fabrication de votre matériel comme d'infimes différences de latence propre a votre GPU.
+                    \item Avec un tracking basé sur les informations materielles, il est en théorie impossible de mentir et donc impossible de fausser ce profilage \cite{hardware}.
+                    \item Ces techniques consistent a détécter des irrégularités commises à la fabrication de votre matériel comme d'infimes différences de latence, propres a votre GPU \cite{hardware}.
                     \item Ces techniques sont donc plus difficiles à repousser mais aussi à mettre en place et à fiabiliser pour les trackers, nous ne verrons donc ici pas ce cas.
                 \end{itemize}
             \end{center}
@@ -155,7 +156,7 @@
             \begin{center}
                 \begin{itemize}
                     \item Un environnement de travail à jour améliore la sécurité générale de votre système.
-                    \item Il vous permet d'avoir des numéros de version plus communes, donc moins facilement identifiables pour un nouveau tracker.
+                    \item Il vous permet d'avoir des numéros de version plus communes, donc moins facilement identifiables pour un nouveau tracker \cite{unique}.
                     \item Ne pas oublier d'ajouter l'option \textit{Do No Track}.
                 \end{itemize}
             \end{center}
